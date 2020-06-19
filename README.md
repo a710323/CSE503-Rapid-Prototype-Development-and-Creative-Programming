@@ -2,7 +2,7 @@
 
 My online repository of my work of CSE503 during Spring 2020.
 
-For group assignments, I partnered with Michael Kim and did 50-50 jobs on every group assignment.
+For group assignments, I partnered with Michael Kim and did 50-50 job on every group assignment.
 
 # Warning:
 
