@@ -7,4 +7,4 @@ The UserDir Apache module is working. Place a file in /home/<username>/public_ht
 
 The following link is my php calculator:
 
-  [I'm a php calculator](http://ec2-3-16-22-100.us-east-2.compute.amazonaws.com/~alexteng/module2/module2-individual-a710323/phpcalculator.html)
+  [I'm a php calculator](http://ec2-3-133-92-116.us-east-2.compute.amazonaws.com/~alexteng/module2/module2-individual-a710323/phpcalculator.html)
