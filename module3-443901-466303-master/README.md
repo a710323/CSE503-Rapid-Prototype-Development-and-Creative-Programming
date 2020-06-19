@@ -3,7 +3,7 @@
 
 466303
 
-[News-Sharing-Website](http://ec2-3-16-22-100.us-east-2.compute.amazonaws.com/~alexteng/module3/module3-443901-466303/mainpage.php)
+[News-Sharing-Website](http://ec2-3-133-92-116.us-east-2.compute.amazonaws.com/~alexteng/module3/module3-443901-466303/mainpage.php)
 
 Default Username and Password: 
 
