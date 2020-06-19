@@ -1,0 +1,103 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login {
+    background-color: orange;
+    width: 490px;
+    margin: 100px auto;
+    height: 400px;
+    padding-top: 20px;
+}
+.login form input[type="text"], .login form input[type="password"]{
+    width: 400px;
+    height: 50px;
+    border: 1px solid gray;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.login form input[type="submit"] {
+    width: 432.3px;
+    height: 50px;
+    border: 1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login regist {
+    margin-left: 140px;
+    text-align: center;
+}
+.login error {
+    color: red;
+    font-size: 12px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.login message {
+    color: blue;
+    font-size: 12px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.register {
+    background-color: blanchedalmond;
+    width: 500px;
+    margin: 100px auto;
+    height: 420px;
+    padding-top: 20px;
+}
+.register form input[type="text"], .register form input[type="password"]{
+    width: 400px;
+    height: 50px;
+    border: 1px solid gray;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+.register form input[type="submit"] {
+    width: 432.3px;
+    height: 50px;
+    border: 1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.register error {
+    color: red;
+    font-size: 12px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.register login {
+    margin-left: 225px;
+    text-align: center;
+}
+
+.mainpage top {
+    width: 1000px;
+    margin: 10px auto;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.mainpage a1 {
+    font-weight: bold;
+}
+
+.mainpage log {
+    margin-left: 85%;
+}

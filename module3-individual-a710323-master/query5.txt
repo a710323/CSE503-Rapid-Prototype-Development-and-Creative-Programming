@@ -1,0 +1,10 @@
+mysql> select
+    -> id, email_address, avg(grade) as avg_Grade from students, grades
+    -> where students.id = grades.student_id and students.first_name='Jack' and students.last_name='Johnson';
++-----+------------------------------+-----------+
+| id  | email_address                | avg_Grade |
++-----+------------------------------+-----------+
+| 257 | jjmuzak@brushfirerecords.com | 95.333333 |
++-----+------------------------------+-----------+
+1 row in set (0.00 sec)
+

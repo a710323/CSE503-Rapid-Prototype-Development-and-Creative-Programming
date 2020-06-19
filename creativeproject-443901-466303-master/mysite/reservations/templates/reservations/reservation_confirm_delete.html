@@ -1,0 +1,18 @@
+{% extends "reservations/base.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4 "> 
+            Delete Reservation
+            </legend>
+            <h2>Are you sure you want to delete reservation</h2>&nbsp;&nbsp;&nbsp;&nbsp;
+            <h2>"{{object.name}}" at "{{object.restaurant}}" on "{{object.datetime}}"</h2>
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-danger" type="submit">Yes, delete it.</button>
+            <a class="btn btn-outline-secondary" href="{% url 'reservation_details' object.id %}">No, I do not want to delete it.</a>
+        </form>
+    </div>
+{% endblock content %}

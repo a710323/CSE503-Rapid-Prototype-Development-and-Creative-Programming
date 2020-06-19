@@ -1,0 +1,16 @@
+{%extends 'reservations/base.html'%}
+
+{% block title %}
+{{rest.name}}
+{% endblock %}
+
+{% block header %} {{rest.name}} {% endblock %}
+
+{% block content%}
+    <h4>{{rest.short_description}}</h4>
+    <ul>
+        {% for reservation in rest %}
+            <li>{{reservation}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

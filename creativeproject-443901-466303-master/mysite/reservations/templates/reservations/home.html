@@ -1,0 +1,23 @@
+{%extends 'reservations/base.html'%}
+
+{% block title %}Djanjo Reservations - Home{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block header %} Home Page - Quick Look of Reservations
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<!-- XDSoft DateTimePicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
+
+<ul>
+    {% for re in restaurant %}
+        <li>{{ re.name }}</li>
+    {% endfor %}
+</ul>    
+<h3> Make a Quick Reservation Today</h3>
+
+
+<a class="btn btn-outline-primary" href="{% url 'reservation_quickSearch' %}">Quick Reserve Search </a>
+
+{% endblock %}

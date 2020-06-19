@@ -1,0 +1,11 @@
+div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px
+}
+div.title{
+    font-size: 32px;
+    font-weight: bold;
+}
+div.body{
+    padding: 15px;
+}

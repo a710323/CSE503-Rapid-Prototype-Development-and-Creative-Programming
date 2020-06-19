@@ -1,0 +1,27 @@
+{% extends 'reservations/base.html' %}
+
+{% block title %}
+Restaurants
+{% endblock %}
+
+{% block header %} Restaurants {% endblock %}
+
+{% block content %}
+    <form method="GET" action="#" class="form-group">
+        <input type="text" name="searchkey" value="{{searchkey}}">
+        <button type="submit" name="search" value="search" class="btn btn-dark">Search</button>
+        <button type="submit" name="reset" value="reset" class="btn btn-light">Reset</button>
+    </form>
+    <ul>
+        {% for restaurant in restaurants %}
+            <li>{{restaurant}}
+                {% if restaurant.short_description is not null %}
+                    <br>
+                    - {{restaurant.short_description}}
+                    <br>
+                {% endif %}
+            </li> 
+            <br>
+        {% endfor %}
+    </ul>
+{% endblock %}

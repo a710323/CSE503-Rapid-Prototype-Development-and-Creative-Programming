@@ -1,0 +1,17 @@
+{% extends "reservations/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <h2 class="account-heading">{{user.username}}</h2>
+        <p class="text-secondary">{{user.email}}</p>
+        <a class="btn btn-outline-primary" href="{% url 'reservation_create' %}">Reserve a restaurant now</a>
+        <h2>Your Reservation List</h2>
+        <ul>
+        {% for re in reservationList %}
+            <li>
+                <a class="btn btn-outline-secondary" href="{% url 'reservation_details' re.id %}">Reservation Name: {{re.name}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

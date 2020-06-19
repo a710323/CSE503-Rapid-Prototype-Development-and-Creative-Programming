@@ -1,0 +1,66 @@
+/* Use template from course wiki and course video:
+https://classes.engineering.wustl.edu/cse330/index.php?title=HTML_and_CSS 
+header {
+	color: blue;
+	font-family: Verdana, sans-serif;
+}
+*/
+
+/* The color of backgroud is defined by the assginment: https://classes.engineering.wustl.edu/cse330/index.php/Module_1
+Make the background-color of the page baby blue */
+body{
+    /* for the color of baby blue, I use the info from: https://www.colorhexa.com/89cff0 */
+    background-color : #89cff0;
+    /* end of quote */
+}
+
+/* The color of the text is defined by the assignment: https://classes.engineering.wustl.edu/cse330/index.php/Module_1
+Make the background-color of the page baby blue and use purple ink to write a card to a little boy
+And the font size, heart image, and shadow are also defined by the requirements  */
+
+h1{
+    color : purple;
+    /* super big text */
+    font-size : 100px;
+    /* make shadow */
+    text-shadow: 3px 3px black;
+    /* put text in center */
+    text-align: center;
+    /* randomly pick a font family*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    color : purple;
+    font-size : 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    color : black;
+    font-size : 20px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h4{
+    color: orange;
+    text-shadow : 4px 4px yellow;
+    font-size : 60px;
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h5{
+    color: purple;
+    text-shadow : 10px 10px green;
+    font-size : 33px;
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace
+}
+
+p{
+    color: blue;
+    font-size : 60px;
+    font-family: "Times New Roman"
+}

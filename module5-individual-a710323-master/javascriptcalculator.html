@@ -1,0 +1,113 @@
+<!-- Quoted from my own php calculator and modify it that tailors to the assginment needs. -->
+
+<!-- 
+    For php calculator, I quoted the template from course wiki:
+    https://classes.engineering.wustl.edu/cse330/index.php?title=PHP
+	specifically the section of POST: Passing Variables via Form 
+	 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head><title>JavaScript Calculator</title></head>
+<body>
+
+<!-- Now, instead of redirect to calculatorinfo.php, we can specify the id for later use -->
+
+<form id="userinput">
+	<!-- Get the input from users, 2 numbers and the operation he/she wants to perfrom  -->
+	<p>
+		<label for="firstnumberinput">First Number:</label>
+		<input type="text" name="firstnumber" id="firstnumberinput" />
+	</p>
+	<p>
+		<label for="secondnumberinput">Second Number:</label>
+		<input type="text" name="secondnumber" id="secondnumberinput" />
+	</p>
+
+	<!-- Make the operation bold and list all the possible operations, I use unorder list just want to make the selection more
+		aesthetically pleasing -->
+
+		<!-- <strong>Operations:</strong> -->
+		<ul>
+			<li><input type="radio" name="operation" value="add" id="addid" /> <label for="addid">Addition</label></li>
+			<li><input type="radio" name="operation" value="subtract" id="subtractid" /> <label for="subtractid">Subtraction</label></li>
+			<li><input type="radio" name="operation" value="multiply" id="multiplyid" /> <label for="multiplyid">Multiplication</label></li>
+			<li><input type="radio" name="operation" value="divide" id="divideid" /> <label for="divideid">Division</label></li>
+		</ul>	
+</form>
+
+<!-- Quoted from course wiki:  https://classes.engineering.wustl.edu/cse330/index.php?title=JavaScript
+In order not to load additional scripts, we'll use javascript to complete that-->
+
+<!-- Let the output big -->
+<h2 id="module5"></h2>
+
+    <script>
+        // main function
+        function main(){
+
+            // get the 2 numbers using id
+            let x = document.getElementById("firstnumberinput").value;
+            let y = document.getElementById("secondnumberinput").value;
+
+            // if there's a field that has no input, print out the error message
+            if(x === "" || y === ""){
+                document.getElementById("module5").innerHTML = "Enter valid inputs and click the operation you want to perform.";
+            }
+
+            // get the operator by iterating the operation radio
+            // from course wiki: https://classes.engineering.wustl.edu/cse330/index.php?title=JavaScript
+            // Example: Currently Selected Radio Button:In pure JavaScript, in order to determine the currently selected 
+            // radio button, it is necessary to iterate over an array of pointers to all possible radio buttons, 
+            // and stop when you find one that is "checked".
+            let oper = null;
+            let operation = document.getElementsByName("operation");
+            for(let i=0; i<operation.length; i++){
+                if(operation[i].checked){
+                    oper = operation[i].value;  
+                    break;       
+                }
+            }
+
+            // perfrom operation based on the the user's input and print out the message by using 
+            // innerHTML
+            // quoted from course wiki: https://classes.engineering.wustl.edu/cse330/index.php?title=JavaScript
+            // innerHTML section
+            switch (oper){
+                case "add":
+                    ans = parseFloat(x) + parseFloat(y);
+                    document.getElementById("module5").innerHTML = ans;
+                    break;
+                case "subtract":
+                    ans = x - y;
+                    document.getElementById("module5").innerHTML = ans;
+                    break;
+                case "multiply":
+                    ans = x * y;
+                    document.getElementById("module5").innerHTML = ans;
+                    break;
+                case "divide":
+                    if(y == "0"){
+                        document.getElementById("module5").innerHTML = "Denominator cannot be 0.";
+                        break;
+                    }
+                    ans = x / y;
+                    document.getElementById("module5").innerHTML = ans;
+                    break;
+            }
+        }
+
+        // quoted from course wiki: Events
+        // Once the user click one of the operation, the outcome will be printed out.
+        document.getElementById("addid").addEventListener("click", main, false);
+        document.getElementById("subtractid").addEventListener("click", main, false);
+		document.getElementById("multiplyid").addEventListener("click", main, false);
+		document.getElementById("divideid").addEventListener("click", main, false);
+        // help by TA Jeong Min Lim
+		document.getElementById("firstnumberinput").addEventListener("keyup", main, false);
+		document.getElementById("secondnumberinput").addEventListener("keyup", main, false);
+
+    </script>
+</body>
+</html>

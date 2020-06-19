@@ -1,0 +1,12 @@
+{%extends 'reservations/base.html'%}
+{% block content%}
+    <div class="reservation_body">
+        <h3 class="mr-2" >Reservation Detail:</h3>
+        <p>Reservation Name: {{object.name}} </p>
+        <p>Restaurant: {{object.restaurant}}</p>
+        <p>Number of People: {{object.num}}</p>
+        <p>Time: {{ object.datetime }}</p>
+        <a class="btn btn-outline-secondary" href="{% url 'reservation_update' object.id %}">Update it</a>
+        <a class="btn btn-outline-danger" href="{% url 'reservation_delete' object.id %}">Delete it</a>
+    </div>
+{% endblock %}

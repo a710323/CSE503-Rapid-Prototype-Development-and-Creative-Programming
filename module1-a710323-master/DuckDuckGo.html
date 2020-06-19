@@ -1,0 +1,54 @@
+<!-- Use the template from course wiki:
+https://classes.engineering.wustl.edu/cse330/index.php?title=HTML_Forms -->
+
+<!DOCTYPE html>
+<!-- To pass the validator, specify the language -->
+<html lang="en" >
+<head>
+    <!-- Specify the character encoding -->
+    <meta charset="UTF-8">
+    <!-- use css to set color and text details -->
+    <link rel="stylesheet" type="text/css" href="myStyleToSearch.css">
+    <title>DuckDuckGo Search Tool</title>
+</head>
+
+<body>
+
+    <h1 class=new> This is a line to demonstrate CSS with class.</h1>
+    <!-- According to the assignment, the regrade policy should be on the search tool-->
+    <h2>
+        The following is the regrade policy for CSE330/CSE503.
+    </h2>
+    <h3>
+        It must be objectively clear that an error was made during grading. <br/>
+        Examples of such errors include a grader incorrectly summing points or incorrectly marking something not completed. <br/>
+        Grades based on the judgement of the grader, except in extremely extenuating circumstances, will not be regraded. <br/>
+        In particular, grades for categories like "Site is Visually Appealing" will not be regraded. <br/>
+        All regrade requests must be submitted by email to cse330ta@gmail.com within one week of grading. <br/>
+        Requests submitted after this deadline will not be considered. <br/>
+        Requests must contain a specific explanation of the error, including filenames and line numbers of code, if appropriate.<br/>
+    </h3>
+
+    <h4>
+        I know the font size is small, however, we're cautioned :)
+    </h4>
+
+    <!--
+        The folloing is quoted from the course wiki, the code example of html form, to help me complete the following part.
+        <form action="http://example.com/search" method="GET">
+            <label>Search Query: <input type="text" name="q" /></label>
+            <input type="submit" value="Search" />
+        </form> 
+    -->
+    
+    <!-- Trying class with CSS -->
+    <p class=center>DuckDuckGo Search</p>
+    <!-- I have question, how to let CSS to configure the look of form? -->
+    <!-- I figure that out, it's simple -->
+    <form id=center action="https://duckduckgo.com/" method="GET">
+        <label>Search Query: <input type="text" name="q" /></label>
+        <input type="submit" value="Search" />
+    </form>
+</body>
+
+</html>

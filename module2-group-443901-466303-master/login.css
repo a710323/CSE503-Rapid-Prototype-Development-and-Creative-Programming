@@ -1,0 +1,18 @@
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    border: 1px solid gray;
+    padding: 10px
+}
+div.center {
+    font-weight: bold;
+    width: 380px;
+    border: 0px solid gray;
+    text-align: center;
+}
+div.error {
+    color: red;
+    font-weight: bold;
+    width: 350px;
+    border: 0px solid gray;
+}

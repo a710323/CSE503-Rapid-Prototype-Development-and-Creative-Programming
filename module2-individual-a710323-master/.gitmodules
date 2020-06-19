@@ -1,0 +1,3 @@
+[submodule "git_training"]
+	path = git_training
+	url = https://github.com/a710323/git_training.git

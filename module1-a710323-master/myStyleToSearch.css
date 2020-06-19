@@ -1,0 +1,52 @@
+/* Use template from course wiki and course video:
+https://classes.engineering.wustl.edu/cse330/index.php?title=HTML_and_CSS 
+header {
+	color: blue;
+	font-family: Verdana, sans-serif;
+}
+*/
+
+/* defind the background color to be wheat */
+body{
+    background-color: darksalmon;
+}
+
+h1.new{
+    color: gray;
+    font-size: 60px;
+    text-shadow: 8px 8px green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    color : purple;
+    /* super big text */
+    font-size : 30px;
+    text-shadow: 3px 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* not very big text */
+h3{
+    color: darkmagenta;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4{
+    color: darkblue;
+    font-size: 100px;
+}
+
+/* demonstrate the CSS with class */
+p.center{
+    color: red;
+    font-size: 55px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+/* demonstrate the CSS with id */
+#center{
+    text-align: center;
+}

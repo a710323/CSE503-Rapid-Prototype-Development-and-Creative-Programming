@@ -1,0 +1,39 @@
+<!-- 
+    For php calculator, I quoted the template from course wiki:
+    https://classes.engineering.wustl.edu/cse330/index.php?title=PHP
+	specifically the section of POST: Passing Variables via Form 
+	 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head><title>PHP Calculator</title></head>
+<body>
+<form action="calculatorinfo.php" method="POST">
+	<!-- Get the input from users, 2 numbers and the operation he/she wants to perfrom  -->
+	<p>
+		<label for="firstnumberinput">First Number:</label>
+		<input type="text" name="firstnumber" id="firstnumberinput" />
+	</p>
+	<p>
+		<label for="secondnumberinput">Second Number:</label>
+		<input type="text" name="secondnumber" id="secondnumberinput" />
+	</p>
+
+	<!-- Make the operation bold and list all the possible operations, I use unorder list just want to make the selection more
+		aesthetically pleasing -->
+
+	
+		<strong>Operations:</strong>
+		<ul>
+			<li><input type="radio" name="operation" value="add" id="addid" /> <label for="addid">Addition</label></li>
+			<li><input type="radio" name="operation" value="subtract" id="subtractid" /> <label for="subtractid">Subtraction</label></li>
+			<li><input type="radio" name="operation" value="multiply" id="multiplyid" /> <label for="multiplyid">Multiplication</label></li>
+			<li><input type="radio" name="operation" value="divide" id="divideid" /> <label for="divideid">Division</label></li>
+		</ul>
+		<input type="submit" value='Calculate' />
+		<input type="reset" />
+	
+</form>
+</body>
+</html>
