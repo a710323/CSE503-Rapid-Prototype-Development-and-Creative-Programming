@@ -1,2 +1,3 @@
 # CSE330
-466303
+
+This module is helping us install mySQL and learn how to query.
