@@ -4,8 +4,8 @@ My online repository of my work of CSE503 during Spring 2020.
 
 For group assignments, I partnered with Michael Kim and did 50-50 job on every group assignment.
 
-# Warning:
+# Warning/Disclaimer:
 
-If you're going to take CSE330/CSE503, please do not look at any of my code as the course syllabus defines that kind of action as cheating and will be forwarded to Academic Integreity Committee. You'll receive an F for the course.
+If you're going to take or you're currently taking CSE330/CSE503, please do not look at any of my code as the course syllabus defines this kind of action as cheating and will be forwarded to Academic Integreity Committee. You'll receive an F for the course.
 
 For detailed information, please visit, https://www.arl.wustl.edu/~todd/cse330/info.html
