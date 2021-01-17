@@ -3,7 +3,7 @@
 
 466303
 
-[Calendar Website](http://ec2-3-16-156-72.us-east-2.compute.amazonaws.com/~mikejoo/module5/group/calendar.php)
+[Michael's Calendar Website](http://ec2-3-16-156-72.us-east-2.compute.amazonaws.com/~mikejoo/module5/group/calendar.php)
 
 If the above link does not work: 
 [Alex's calendar website](http://ec2-3-133-92-116.us-east-2.compute.amazonaws.com/~alexteng/JavaScript_Website/Calendar_Website/calendar.php)
